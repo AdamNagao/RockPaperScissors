@@ -26,6 +26,15 @@ function computerSelection(){
 }
 
 function playRound(){
+    /*
+        1. Fix opening all opening curly braces. need a space between ending ) and {
+        2. Change all hard coded strings ("rock", "scissors", "paper") to variables and use those variables throughout the code.
+            This makes it so if they ever need to change you can just update it once and not in 100 other places. More maintainability.
+        3. Can you create a function that replaces all the if statements below. It should take in the playerSelection and computersMove as inputs and return a string (the message to display to the user)
+            This will reduce the duplicated code so you don't have to have 4 different "You won!" and "You lost!" lines. Makes the code cleaner.
+        4. If you wanted another function to generate the message to the user I like that too. It should take in the winner and loser as input and generate a string
+            (This slightly changes what I said in #3)
+    */
     if (playerSelection === 'rock' && computersMove === 'scissors'){
     return 'You won! Rock beats Scissors.';
 
